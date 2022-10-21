@@ -1,6 +1,8 @@
 # Energy_Demand_Forecast
 This was a program organised between Enapsys Ltd. and Teesside University. The proposed project was at the heart of Enapsys's current consulting endeavours.
 The business problem assigned was centred around the electricity demand of France, which was a major driver of European electricity prices. Therefore, France is likely to import from its neighbours during times of high demand, which will raise energy prices, and export during times of low demand, which will do the opposite, lowering energy prices. As a result, Enapsys has a pressing need to develop solid insight to anticipate these demands to help companies like Shell, eDF and Centrica in making informed business plans.
+
+
 The following approach was implemented in the execution of the project.
 
 •	Data collection, cleaning, and data pre-pre-processing

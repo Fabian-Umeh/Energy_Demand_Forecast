@@ -1,27 +1,73 @@
-# Energy_Demand_Forecast
-This was an open project organised between Enapsys Ltd. and Teesside University.
-The business problem assigned was centred around the electricity demand of France, which was a major driver of European electricity prices. Therefore, France is likely to import from its neighbours during times of high demand, which will raise energy prices, and export during times of low demand, which will do the opposite, lowering energy prices. As a result, Enapsys has a pressing need to develop solid insight to anticipate these demands to help companies like Shell, eDF and Centrica in making informed business plans.
 
+# EnAppSys Energy Demand Forecasting
 
-The following approach was implemented in the execution of the project.
+## Overview
+This repository contains two Jupyter Notebooks that focus on the energy demand forecasting for France. The notebooks take into consideration various factors such as weather conditions, time, and other features to make hourly forecasts up to 48 hours in advance.
 
-•	Data collection, cleaning, and data pre-pre-processing
+### Table of Contents
+1. [EnAppSys_EDA.ipynb](#enappsys_eda.ipynb)
+2. [EnAppSys_Demand_ML.ipynb](#enappsys_demand_ml.ipynb)
+3. [Data](#data)
+4. [Installation](#installation)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Contact](#contact)
 
+---
 
-•	Insight analysis of France's energy demand historical data: The peak periods and low demand periods were identified through trends, the impact of other phenomena such as holiday and weekends were identified.
+## [EnAppSys_EDA.ipynb](./EnAppSys_EDA.ipynb)
+### Summary
+This notebook provides an exploratory data analysis (EDA) of energy demand in France. It aims to understand the pattern and dependencies of energy demand in the context of the European electricity market.
 
+#### Highlights
+- **General Description**: Investigates the electricity demand of France and its influence on European electricity prices.
+- **Forecasting**: Provides a framework for forecasting demand on an hourly level up to 48 hours ahead.
+- **Extra Analysis**: Offers insights into how temperature changes affect the average electricity demand during weekdays and weekends, on a monthly basis.
 
-•	Test phase one: In this step just before feature engineering, Linear models were implemented to further understand the impact of the selected features which proved helpful in creating new features.
+#### Data Sources
+- `dataset.csv`: Contains the actual demand data and several other features.
+- `dataset_coords.csv`: Contains weather data on a coordinate level.
 
+---
 
-•	Feature Engineering: Features were tested for correlation and were also created to further improve the model accuracy.
+## [EnAppSys_Demand_ML.ipynb](./EnAppSys_Demand_ML.ipynb)
+### Summary
+This notebook delves into machine learning models for predicting energy demand in France. Various models are explored to understand their efficacy in forecasting.
 
+#### Highlights
+- **Modeling**: Employs several machine learning models, such as Random Forest and K-Nearest Neighbors, for demand forecasting.
+- **Feature Importance**: Analyzes the significance of various features like solar forecast, wind actual, etc.
+- **Performance Metrics**: Evaluates the models using metrics like R2 score and Mean Absolute Percentage Error (MAPE).
 
-•	Test phase two: In this phase, machine learning models were used to better understand the created features and as well set the foundation for building the deep learning models.
+#### Data Sources
+- Same as the EDA notebook, with additional feature engineering.
 
+---
 
-•	Test phase three: Two deep learning models were tested and the most optimal (Convolutional Neural Network) was agreed to be used.
+## Data
+The data files used in these notebooks are presumed to be in CSV format. They contain both the demand data and various features that could influence demand, such as weather conditions.
 
+---
 
-•	The key highlight of this model is its accuracy to Forecast France’s Energy price (1 hour, 24 hours, and 48 hours ahead)
+## Installation
+1. Clone this repository.
+2. Make sure you have Jupyter Notebook installed, or install it via pip:
+   ```
+   pip install notebook
+   ```
+3. Run Jupyter Notebook and navigate to the cloned repository.
 
+---
+
+## Contributing
+Feel free to fork this repository and contribute. Pull requests are welcome.
+
+---
+
+## License
+This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
+
+---
+
+## Contact
+For any queries, feel free to reach out.
